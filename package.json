@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --turbopack",
-    "build": "next build && cp -r .next/static build/static",
+    "build": "next build && mkdir -p build/static && cp -r .next/static/* build/static/",
     "start": "next start",
     "lint": "next lint"
   },
